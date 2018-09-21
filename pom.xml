@@ -72,8 +72,8 @@
 				<configuration>
 					<mainClass>local.example.test.App</mainClass>
 					<arguments>
-						<argument>David123</argument>
-						<argument>bar</argument>
+						<argument>env.NAME</argument>
+						<argument>env.PASS</argument>
 					</arguments>
 				</configuration>
 			</plugin>
