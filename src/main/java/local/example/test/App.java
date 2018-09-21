@@ -10,6 +10,6 @@ public class App
     {
         System.out.println( "Hello World testing !!!!! This is successfull test " + args[0] );
 
-
+                         System.out.println( "Hello World testing"+System.getenv("NAME"));
     }
 }
