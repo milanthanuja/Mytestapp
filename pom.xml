@@ -59,6 +59,24 @@
           <artifactId>maven-deploy-plugin</artifactId>
           <version>2.8.2</version>
         </plugin>
+        <plugin>
+				   <artifactId>exec-maven-plugin</artifactId>
+				   <version>1.6.0</version>
+				  <executions>
+					  <execution>
+						  <goals>
+							  <goal>java</goal>
+					   	</goals>
+					 </execution>
+				  </executions>
+				<configuration>
+					<mainClass>local.example.test.App</mainClass>
+					<arguments>
+						<argument>${env.NAME}</argument>
+						<argument>${env.PASS}</argument>
+					</arguments>
+				</configuration>
+			</plugin>
       </plugins>
     </pluginManagement>
   </build>
