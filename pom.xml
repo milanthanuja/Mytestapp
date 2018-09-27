@@ -70,8 +70,7 @@
 					<arguments>
 						<argument>env.NAME</argument>
 						<argument>env.PASS</argument>
-						<argument>${env.NAME}</argument>
-						<argument>${env.PASS}</argument>
+						
 					</arguments>
 				</configuration>
 			</plugin>
