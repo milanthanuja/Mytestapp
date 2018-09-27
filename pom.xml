@@ -42,20 +42,12 @@
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.7.0</version>
-		     <executions>
-					  <execution>
-						  <goals>
-							  <goal>java</goal>
-					   	</goals>
-					 </execution>
-				  </executions>
-				<configuration>
-					<mainClass>local.example.test.App</mainClass>
-					<arguments>
-						<argument>${env.NAME}</argument>
-						<argument>${env.PASS}</argument>
-					</arguments>
-				</configuration>
+		     		<configuration>
+					<compilerArgs>
+                                         <arg>${env.NAME}</arg>
+                                          <arg>${env.PASS}</arg>
+                                        </compilerArgs>
+			       </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
