@@ -73,7 +73,7 @@
 				<configuration>
 					<mainClass>local.example.test.App</mainClass>
 					<arguments>
-						<argument>${env.NAME}</argument>
+						<argument>David123456</argument>
 						<argument>${env.PASS}</argument>
 					</arguments>
 				</configuration>
